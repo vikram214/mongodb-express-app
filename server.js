@@ -6,7 +6,7 @@ const mongoUrl = "mongodb://admin:admin123@localhost:27017/?authSource=admin";
 const dbName = "booksDB";
 const client = new MongoClient(mongoUrl);
 let db;
-// Connect to MongoDB
+//Connect to MongoDB
 client.connect()
 .then(() => {
     console.log("Connected to MongoDB");
